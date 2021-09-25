@@ -204,7 +204,7 @@ fn main() {
         .expect("Failed to read input");
     let input = buffer.trim();
     let density = input.parse::<f64>().expect("Input was not a decimal");
-    if !( (density > 0.0) | (density <= 1.0) ) {
+    if !( (density > 0.0) & (density <= 1.0) ) {
         panic!("Input must be greater than 0 and less than 1.0")
     }
 
